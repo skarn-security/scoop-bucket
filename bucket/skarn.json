@@ -1,0 +1,36 @@
+{
+    "version": "0.18.0",
+    "description": "AI session security scanner with built-in session search",
+    "homepage": "https://getskarn.com",
+    "license": "Proprietary",
+    "notes": [
+        "Free for an individual developer: no account, no license token, no network call by default.",
+        "Get started: skarn assess, then skarn license <path>, then skarn setup, then skarn doctor."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.18.0/skarn-x86_64-windows.exe#/skarn.exe",
+            "hash": "86b8c6c5db133ca44931f10dc120fef400b25505f4fe85eaa2b9e3168bdff915"
+        },
+        "arm64": {
+            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.18.0/skarn-aarch64-windows.exe#/skarn.exe",
+            "hash": "697b42b1c21c51c8f853e170977798304171f0ced357ee79e9b506c38e542c38"
+        }
+    },
+    "bin": "skarn.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/skarn-security/skarn-dist/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "v(?<version>[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/skarn-security/skarn-dist/releases/download/v$version/skarn-x86_64-windows.exe#/skarn.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/skarn-security/skarn-dist/releases/download/v$version/skarn-aarch64-windows.exe#/skarn.exe"
+            }
+        }
+    }
+}
