@@ -1,5 +1,5 @@
 {
-    "version": "0.22.0",
+    "version": "0.23.0",
     "description": "AI session security scanner with built-in session search",
     "homepage": "https://getskarn.com",
     "license": "Proprietary",
@@ -9,12 +9,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.22.0/skarn-x86_64-windows.exe#/skarn.exe",
-            "hash": "1bf0761d0e5bb3ae705e6771b2bf76c5a3cff1c60b4a8b1516a18f3bc437dbd2"
+            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.23.0/skarn-x86_64-windows.exe#/skarn.exe",
+            "hash": "44bd002d53a0b44e5ce84332e6799cd64ea560cdca4ac3e4f3a152140e43a507"
         },
         "arm64": {
-            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.22.0/skarn-aarch64-windows.exe#/skarn.exe",
-            "hash": "58fcd1470adf3f066fb58cbf7e3e0e4faf2e47d83aeb8be13b005ec778b94d35"
+            "url": "https://github.com/skarn-security/skarn-dist/releases/download/v0.23.0/skarn-aarch64-windows.exe#/skarn.exe",
+            "hash": "321106f0975d3011bd10dd91678de40a406c4e9a3c56ffa692db4362f0939411"
         }
     },
     "bin": "skarn.exe",
